@@ -41,6 +41,8 @@ public class GnirehtetActivity extends Activity {
         if (ACTION_GNIREHTET_START.equals(action)) {
             VpnConfiguration config = createConfig(intent);
             finish = startGnirehtet(config);
+            // should subscribe here
+            // https://stackoverflow.com/a/16898814
         } else if (ACTION_GNIREHTET_STOP.equals(action)) {
             stopGnirehtet();
         }
